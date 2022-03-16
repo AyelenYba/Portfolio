@@ -1,0 +1,112 @@
+.nav-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    max-width: 100%;
+    padding: 1em 0 0.8em;
+    z-index: 999;
+    top: 0;
+}
+
+.nav-bar.active {
+    background: var(--color4);
+    transition: 0.4s ease-in-out;
+}
+
+.nav-bar ul {
+    display: flex;
+    gap: 3em;  
+}
+
+.nav-bar li {
+    list-style: none;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    font: var(--font-header);
+    color: var(--text-color1);
+}
+
+.nav-bar a:hover {
+    color: var(--color2);
+    transition: .3s ease-out;
+}
+
+.underline-effect {
+    padding-bottom: 0.3em;
+    position: relative;
+}
+
+.underline-effect::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 1.3px;
+    background-color: var(--color1);
+    transition:  width 0.3s ease-out;
+}
+
+.underline-effect:hover::before {
+    width: 100%;
+}
+
+nav .burger-menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    padding: 1em 0;
+    right: 8%;
+    color: var(--text-color1);
+}
+
+nav .burger-menu i {
+    font-size: 2em;
+    cursor: pointer;
+}
+
+nav .burger-menu i:hover {
+    color: var(--color2);
+    transition: 0.3s;
+}
+
+
+
+@media (max-width: 768px) {
+
+    .nav-bar {
+        height: 4em;
+    }
+
+    nav .burger-menu {
+        display: block;
+    }
+
+    nav .nav-links {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 3em 4em 1.4em 1.4em;
+        width: 100%;
+        background-color: var(--color4);
+        transform: translateX(-1000px);
+        transition: 0.4s;
+    }
+
+    .underline-effect:hover::before {
+        width: 0;
+    }
+
+    nav .nav-links a {
+        line-height: 2.5em;
+    }
+
+    nav .menu-active {
+        transform: translateX(0);
+    }
+}

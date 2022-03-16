@@ -1,0 +1,21 @@
+#projects-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 10em auto;
+}
+
+#projects-container h1{
+    font: var(--font-subtitle2);
+}
+
+.projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 2em;
+    flex-wrap: wrap;
+    width: 100%;
+}

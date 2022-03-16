@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap');
+
+:root {
+
+/* -------- COLOURS -------- */
+    --bg-color: rgb(68, 69, 69); /* 68, 69, 69*/
+    --color1: rgb(197, 224, 216); /*206, 171, 177*/
+    --color2: rgb(181, 255, 233); /* 201, 201, 201 */
+    --color3: rgb(201, 201, 201); /*197, 224, 216 */
+    --color4: rgba(68, 69, 69, 0.7); /*181, 255, 233 */
+    --color5: rgb(206, 171, 177);
+    --text-color1: rgb(252, 248, 252);
+    --text-color2: rgb(15, 15, 15); 
+/* -------- FONTS AND PROPERTIES -------- */
+
+    --font-main-title: 600 3em 'Quicksand', sans-serif;
+    --font-subtitle1: 600 2.5em 'Quickasnd', sans-serif;
+    --font-subtitle2: 600 2em 'Quickasnd', sans-serif;
+    --font-text: 400 1.2em 'Quicksand', sans-serif;
+    --font-header: 500 1.15em 'QuickSand', sans-serif;
+    --font-form-info: 400 1.06em 'Quicksand', sans-serif;
+    --font-form-input: 400 0.9em 'Quicksand', sans-serif;
+    --font-button1: 500 1.2em 'Quicksand', sans-serif;
+    --font-button2: 500 1em 'Quicksand', sans-serif;
+    --letter-spacing: 1px;
+
+    --font-main-title-992: 600 2.7em 'Quicksand', sans-serif;
+    --font-subtitle1-992: 600 2.2em 'Quickasand', sans-serif;
+    --font-text-992: 400 1.1em 'Quicksand', sans-serif;
+    --font-form-info-992: 400 1em 'Quicksand', sans-serif;
+
+    --font-main-title-768: 600 2.6em 'Quicksand', sans-serif;
+    --font-subtitle1-768: 600 2.1em 'Quickasnd', sans-serif;
+    --font-text-768: 400 1.1em 'Quicksand', sans-serif;
+    --font-form-info-768: 400 0.95em 'Quicksand', sans-serif;
+
+    --font-main-title-0: 600 2em 'Quicksand', sans-serif;
+    --font-subtitle1-0: 600 1.5em 'Quickasnd', sans-serif;
+    --font-text-0: 400 1em 'Quicksand', sans-serif;
+    --font-form-info-0: 400 0.9em 'Quicksand', sans-serif;
+    
+    --font-subtitle2-0-992: 600 1.7em 'Quicksand', sans-serif;
+    --font-button1-0-992: 500 1em 'Quicksand', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color1);
+    letter-spacing: var(--letter-spacing);
+}
+
+html {
+    scroll-behavior: smooth;
+}

@@ -1,0 +1,36 @@
+.project-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    row-gap: 3em;
+}
+
+.project-container h3, p{
+    font: var(--font-text);
+}
+
+.project-info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2em;
+}
+
+.tools-used {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.project-btns {
+    display: flex;
+    justify-content: center;
+    column-gap: 2.5em;
+}
+
+.project-btns a {
+    text-decoration: none;
+    color: var(--text-color1);
+    font: var(--font-button2);
+} 
+

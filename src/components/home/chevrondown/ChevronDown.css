@@ -1,0 +1,33 @@
+.chevron-down {
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+}
+
+.chevron-down a {
+    text-decoration: none;
+    color: var(--text-color1);
+}
+
+.chevron-down a:hover {
+    color: var(--color2);
+    transition: .3s ease-out;
+}
+
+/* Floating animation chevron*/
+
+.floating {
+    animation: floating 2s infinite ease-in-out;
+}
+
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    40% { transform: translate(0, 5px); }
+}
+
+/* Hide chevron */
+
+.hidden-chevron {
+    opacity: 0;
+    transition: 0.4s;
+}

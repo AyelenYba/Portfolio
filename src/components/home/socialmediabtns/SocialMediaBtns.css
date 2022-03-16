@@ -1,0 +1,16 @@
+.socialmedia-list {
+    display: flex;
+    list-style: none;
+    column-gap: 2em;
+    font-size: 1.6em;
+}
+
+.socialmedia-list a {
+    color: var(--text-color1);
+    text-decoration: none;
+}
+
+.socialmedia-list a:hover {
+    color: var(--color2);
+    transition: .3s ease-out;
+}

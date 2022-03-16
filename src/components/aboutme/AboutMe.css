@@ -1,0 +1,22 @@
+.aboutme-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.5em;
+    width: 100%;
+    margin: 3em auto;
+    color: var(--text-color);
+    text-align: center;
+}
+
+.aboutme-container h3 {
+    font: var(--font-subtitle2);
+}
+
+.aboutme-container p {
+    font: var(--font-text);
+}
+
+.aboutme-info {
+    width: 70%;
+    margin: 0 auto;
+}
