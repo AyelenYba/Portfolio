@@ -2,6 +2,9 @@
     margin: 0;
     width: 100%;
     height: 100vh;
+    /* background-color: plum;
+    border-bottom: 1px hidden;
+    border-radius: 0 0 15% 0; Tener en cuenta estos tres para otras secciones*/
 }
 
 .home-container {
