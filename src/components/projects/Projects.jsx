@@ -31,7 +31,7 @@ const Projects = ({ motion, variants }) => {
 
     return (
         <motion.section 
-        id="projects-container"
+        id="projects"
         initial='hidden' 
         transition='duration'  
         viewport={{ once: true }}  
