@@ -8,9 +8,16 @@
 .socialmedia-list a {
     color: var(--text-color1);
     text-decoration: none;
+    transition: .2s ease-out;
 }
 
 .socialmedia-list a:hover {
     color: var(--color2);
-    transition: .3s ease-out;
+}
+
+
+@media  screen and (max-width: 480px) {
+    .socialmedia-list {
+        column-gap: 1em;
+    }
 }

@@ -1,7 +1,7 @@
 form{
     display: flex;
     flex-direction: column;
-    row-gap: 2.3em;
+    row-gap: 2em;
 }
 
 #name, #email, #text-area {
@@ -31,10 +31,11 @@ input::placeholder, textarea::placeholder{
 
 #submit-button {
     margin: 0 auto;
-    width: 130px;
-    height: 30px;
-    border: 1px solid;
+    width: 120px;
+    height: 40px;
+    border: 2px solid;
     border-radius: 10px;
+    transition: all .3s ease-in-out;
     cursor: pointer; 
     background: none;
     color: var(--text-color1);
@@ -50,6 +51,21 @@ input::placeholder, textarea::placeholder{
 #name:focus, #email:focus, #text-area:focus{
     border: none;
     outline: 1px solid plum;
-    transition: 0.1s;
 }
 
+.error, .error-message {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.error {
+    border: 1px solid rgb(228, 42, 42);
+}
+
+.error-message {
+    color: rgb(228, 42, 42);
+    font-size: .8em;
+}
+
+.swal2-title, .swal2-html-container {
+    font-family: 'Quicksand', sans-serif;
+}

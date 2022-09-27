@@ -2,18 +2,61 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
     text-align: center;
-    row-gap: 3em;
+    height: 290px;
+    width: 320px;
+    overflow: hidden;
+    border: 4px solid hidden;
+    border-radius: 10px;
 }
 
 .project-container h3, p{
     font: var(--font-text);
 }
 
-.project-info {
+.project-overlay .description {
+    margin: 0 1em;
+}
+
+.project-img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.project-overlay {
     display: flex;
     flex-direction: column;
-    row-gap: 2em;
+    justify-content: center;
+    row-gap: 3em;
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    top: 200px;
+    transition: all .6s;
+}
+
+.project-container:hover  .project-overlay {
+    top: 0;
+}
+
+.project-overlay > * {
+    transform: translateY(60px);
+    transition: transform 0.5s;
+}
+
+.project-overlay:hover > * {
+    transform: translateY(0);
+}
+
+.project-overlay:hover {
+    opacity: 1;
 }
 
 .tools-used {
@@ -22,15 +65,35 @@
     justify-content: space-evenly;
 }
 
+.tools-used .tool i {
+    font-size: 2em;
+    margin-bottom: .4em;
+}
+
+.tools-used .tool p {
+    font-size: .9em;
+}
+
 .project-btns {
     display: flex;
     justify-content: center;
+    margin: 0 0.5em;
     column-gap: 2.5em;
 }
 
 .project-btns a {
+    border: 2px solid ;
+    border-radius: 10px;
+    padding: 0.5em 0.5em;
     text-decoration: none;
     color: var(--text-color1);
     font: var(--font-button2);
 } 
 
+.project-btns a:hover {
+    background-color: var(--color2);
+    color: var(--text-color2);
+}
+
+@media screen and (max-width: 768px) {
+}

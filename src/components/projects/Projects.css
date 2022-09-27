@@ -3,7 +3,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    row-gap: 2.5em;
+    width: 90%;
     margin: 10em auto;
 }
 
@@ -15,7 +16,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    column-gap: 2em;
+    column-gap: 4em;
+    row-gap: 4em;
     flex-wrap: wrap;
     width: 100%;
 }

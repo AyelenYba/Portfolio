@@ -1,14 +1,12 @@
 export const variantsData = {
     generalVariants : {
         hidden: { y: 120, opacity: 0 },
-        visible: { y: 0, opacity: 1},
-        duration: { duration: 1 }
-},
+        visible: { y: 0, opacity: 1 }
+    },
 
     headerVariants : {
-        visible: { opacity: 1},
-        hidden: { opacity: 0},
-        duration: { duration: 0.5 }
+        visible: { opacity: 1 },
+        hidden: { opacity: 0 }
     },
 
     itemsVariants : {
@@ -22,6 +20,6 @@ export const variantsData = {
             },
         }),
 
-        offscreen: { opacity: 0, y: 60}
+        offscreen: { opacity: 0, y: 60 }
     }
 }

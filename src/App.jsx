@@ -17,7 +17,7 @@ const App = () => {
     const [open, setOpen] = useState(false); //Open or close burger Menu
     const [navDown, setNavDown] = useState(false); //active nav's background
     const [chevronHide, setChevronHide] = useState(false);
-    
+
     //Active nav's background when scrolling
     const activeBackground = () => {
         if(window.scrollY >= 30) {

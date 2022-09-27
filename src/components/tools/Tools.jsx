@@ -2,6 +2,7 @@ import React from 'react';
 import './Tools.css';
 
 const Tools = ({ motion, itemsVariants, variants }) => {
+    
     const toolsData = [
         {name: 'html', iconClass: 'fab fa-html5', content: 'HTML'},
         {name: 'css', iconClass: 'fab fa-css3-alt', content: 'CSS'},

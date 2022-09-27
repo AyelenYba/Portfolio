@@ -1,21 +1,25 @@
 import React from 'react';
 import './Card.css';
 
-const Card = ({ name, url, img, github, tools }) => {
+const Card = ({ name, url, description, img, github, tools }) => {
+    
     return (
         <div className='project-container'>
-            <div className={`${name} project-img`}>
-                <img src={img} alt="" ></img>
-            </div>
-            <div className='project-info'>
-                <div>
-                    <h3>{name}</h3>
-                </div>
+            <img className={`${name} project-img`} src={img} alt={name}></img>
+            <div className='project-overlay'>
+                <p className='description'>{description}</p>
                 <div className='tools-used'>
-                    <p>{tools[0]}</p>
-                    <p>{tools[1]}</p>
-                    <p>{tools[2]}</p>
-                    <p>{tools[3]}</p>
+                    {tools.map((tool, i) => {
+                        const {name, iconClass, id} = tool;
+                        return (
+                            <div className='tool' key={i}> 
+                                <div> 
+                                <i className={`${iconClass} ${id}`}></i>
+                                <p>{name}</p>
+                                </div>
+                            </div>
+                        )
+                    })}
                 </div>
                 <div className='project-btns'>
                     <a href={url} target="_blank" rel="noreferrer">View Live</a>

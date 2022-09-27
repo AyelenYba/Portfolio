@@ -1,11 +1,13 @@
 .footer-container {
-    padding: 2em 0;
+    padding: 1.2em 0;
     background-color: var(--color5);
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer-container h1 {
     font: var(--font-text);
-    margin-bottom: 1.5em;
+    font-weight: bold;
 }
 

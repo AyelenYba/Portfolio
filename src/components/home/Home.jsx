@@ -3,7 +3,7 @@ import React from 'react';
 import SocialMediaBtns from './socialmediabtns/SocialMediaBtns';
 import ChevronDown from './chevrondown/ChevronDown';
 import resume from '../../assets/pdf/CV-AYELÉN YBAÑEZ.pdf';
-import pusheen from '../../assets/images/pusheen.png';
+import pusheen from '../../assets/imagesSrc/pusheen.png';
 import './Home.css';
 
 const Home = ({ isChevronHide, motion, variants, itemsVariants }) => {
@@ -27,9 +27,13 @@ const Home = ({ isChevronHide, motion, variants, itemsVariants }) => {
                 >
                     <div className='main-info-img'>
                         <div className='main-info'>
-                            <h1>SADASdasdD :D</h1>
-                            <h2>skfdgjdndodlas </h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel arcu magna. Ut sit amet euismod nunc, id vestibulum diam. Vivamus semper non quam a imperdiet. </p>
+                            <h1>
+                                Hi! 
+                                <br/>
+                                I'm Ayelén Ybañez
+                            </h1>
+                            <h2>Front end developer</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel arcu magna.  </p>
                         </div>
                         <img src={pusheen} alt=""></img>
                     </div>
