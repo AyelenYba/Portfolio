@@ -5,6 +5,7 @@
 
 - Styling: pure css.
 - Navigation: React Router.
+- Form: Formik and Yup.
 - Library to send emails: email JS.
 - Animations: Framer Motion.
 
